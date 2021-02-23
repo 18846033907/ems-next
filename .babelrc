@@ -1,0 +1,22 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    ["styled-components", { "ssr": true }],
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "@configs": ["./src/configs"],
+          "@components": ["./src/components"],
+          "@constants": ["./src/constants"],
+          "@containers": ["./src/containers"],
+          "@pages": ["./src/pages"],
+          "@styles": ["./src/styles"],
+          "@utils": ["./src/utils"],
+          "@actions": ["./src/actions"]
+        }
+      }
+    ]
+  ]
+}
